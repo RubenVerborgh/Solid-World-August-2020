@@ -30,3 +30,8 @@ p.venue {
   font-weight: bold;
   color: var(--accent);
 }
+
+.toc.slide h2 {
+  font-size: 1em;
+  font-weight: normal;
+}
