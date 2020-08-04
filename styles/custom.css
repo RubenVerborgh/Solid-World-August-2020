@@ -22,3 +22,11 @@ p.venue {
   font-weight: normal;
   font-style: italic;
 }
+
+.text.slide p {
+  font-size: 1.1em;
+  line-height: 1.5;
+  margin: 1em 0 1.33em;
+  font-weight: bold;
+  color: var(--accent);
+}
