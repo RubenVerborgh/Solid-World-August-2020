@@ -229,6 +229,32 @@
     </ul>
   </div>
 
+  <div class="slide" id="diagram">
+    <h2>
+      The <a href="https://rubenverborgh.github.io/solid-server-architecture/solid-architecture-v1-3-0.pdf">architectural diagram</a>
+      shows how<br>
+      key components work together.
+    </h2>
+    <ul>
+      <li>
+        The <code>AuthenticatedLdpHandler</code>
+        coordinates request processing and response generation.
+      </li>
+      <li>
+        Various <code>ResourceStore</code> implementations<br>
+        provide and enhance different back-ends.
+      </li>
+      <li>
+        Customizable components handle a dedicated task.
+        <ul>
+          <li><code>Operation</code> interface</li>
+          <li><code>Authorizer</code> interface</li>
+          <li>…</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
   <div class="toc slide" id="toc-synergies">
     <h2>Solid Community Server</h2>
     <ul>
