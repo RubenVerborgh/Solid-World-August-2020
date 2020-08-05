@@ -24,9 +24,9 @@ p.venue {
 }
 
 .text.slide p {
-  font-size: 1.1em;
+  font-size: 1.2em;
   line-height: 1.5;
-  margin: 1em 0 1.33em;
+  margin: .66em 0 1.33em;
   font-weight: bold;
   color: var(--accent);
 }
@@ -34,4 +34,9 @@ p.venue {
 .toc.slide h2 {
   font-size: 1em;
   font-weight: normal;
+}
+
+#conclusion p {
+  margin-top: 5em;
+  text-align: right;
 }
