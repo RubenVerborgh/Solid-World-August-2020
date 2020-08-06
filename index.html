@@ -30,17 +30,17 @@
 
   <div class="text slide" id="summary">
     <p>
-      <em>Community Solid Server</em> an open-source project<br>
-      that gives people their own data pod.
+      <em>Community Solid Server</em> is open software<br>
+      to provide people with their own data pod.
     </p>
-    <p>
-      It will provide developers with an environment<br>
-      to create new Solid applications.
+    <p class="next">
+      It will give developers an environment<br>
+      to create and test new Solid applications.
     </p>
-    <p>
+    <p class="next">
       Its modular architecture will allows us<br>
-      to test new ideas on the server side<br>
-      and thereby influence the future of Solid.
+      to try out new ideas on the server side<br>
+      and thereby shape the future of Solid.
     </p>
   </div>
 
@@ -68,20 +68,21 @@
       by implementing a set of specifications.
     </h2>
     <ul>
-      <li class="next">
+      <li>
         Think of a data pod as a USB stick.
         <ul>
-          <li>hardware port size</li>
+          <li>connector shape</li>
           <li>electrical signals</li>
           <li>file system format</li>
+          <li>…</li>
         </ul>
       </li>
       <li class="next">
         The
-        <a href="https://github.com/solid/specification/">Solid Specifications</a>
+        <a href="https://github.com/solid/specification/">Solid specifications</a>
         ensure that<br>
-        data can be read by any Solid app<br>
-        regardless of what server it is stored on.
+        data can be accessed by any Solid app<br>
+        regardless of the server it’s stored on.
       </li>
     </ul>
   </div>
@@ -92,27 +93,31 @@
       yet that doesn’t make them all the same.
     </h2>
     <ul>
-      <li class="next">
+      <li>
         All USB sticks behave the same,
         but variations exist.
         <ul>
           <li>different storage capacity</li>
           <li>different sizes and colors</li>
           <li>different security mechanisms</li>
+          <li>…</li>
         </ul>
       </li>
       <li class="next">
         Similarly,
         there are many ways to implement<br>
         a compatible server of Solid data pods.
+        <ul>
+          <li>So which one do we need?</li>
+        </ul>
       </li>
     </ul>
   </div>
 
   <div class="slide" id="goals">
     <h2>
-      The Community Solid Server needs to grow<br>
-      along with the needs of developers.
+      The Community Solid Server should<br>
+      grow along with developers’ needs.
     </h2>
     <ul>
       <li class="next">
@@ -138,11 +143,11 @@
 
   <div class="slide" id="flexibility">
     <h2>
-      The Community Solid Server needs<br>
-      to be ready for different deployments.
+      The Community Solid Server should<br>
+      accommodate the future roadmap.
     </h2>
     <ul>
-      <li>
+      <li class="next">
         storage
         <ul>
           <li>file system</li>
@@ -150,9 +155,9 @@
           <li>…</li>
         </ul>
       </li>
-      <li>identity &amp; authorization</li>
-      <li>search &amp; query</li>
-      <li>…</li>
+      <li class="next">identity &amp; authorization</li>
+      <li class="next">search &amp; query</li>
+      <li class="next">…</li>
     </ul>
   </div>
 
@@ -205,22 +210,22 @@
 
   <div class="slide" id="architecture">
     <h2>
-      We created an architecture<br>
+      The architecture is designed<br>
       to realize a modular design.
     </h2>
     <ul>
-      <li>
+      <li class="next">
         It focuses on the core task of a Solid server:<br>
         authenticated <a href="https://www.w3.org/TR/ldp/">Linked Data Platform</a> requests.
       </li>
-      <li>
-        We designed an <a href="https://github.com/solid/solid-architecture/blob/master/server/request-flow.md">HTTP request flow</a><br>
-        with processing steps and data elements.
+      <li class="next">
+        We created an <a href="https://github.com/solid/solid-architecture/blob/master/server/request-flow.md">HTTP request flow</a> with<br>
+        processing steps and data elements.
         <ul>
           <li>This inspired the object-oriented design.</li>
         </ul>
       </li>
-      <li>
+      <li class="next">
         We emphasize the <em>single-responsibility principle</em>.
         <ul>
           <li>Plugging things in and out should be really easy.</li>
@@ -236,21 +241,21 @@
       key components work together.
     </h2>
     <ul>
-      <li>
+      <li class="next">
         The <code>AuthenticatedLdpHandler</code>
         coordinates request processing and response generation.
       </li>
-      <li>
-        Various <code>ResourceStore</code> implementations<br>
-        provide and enhance different back-ends.
-      </li>
-      <li>
+      <li class="next">
         Customizable components handle a dedicated task.
         <ul>
           <li><code>Operation</code> interface</li>
           <li><code>Authorizer</code> interface</li>
           <li>…</li>
         </ul>
+      </li>
+      <li class="next">
+        Various <code>ResourceStore</code> implementations<br>
+        provide and enhance different back-ends.
       </li>
     </ul>
   </div>
@@ -279,8 +284,8 @@
         in discussions, code reviews, …
       </li>
       <li>
-        Any questions, needs,  or feedback you have<br>
-        can be posted there.
+        Don’t hesitate to send your ideas,<br>
+        questions, needs, and feedback.
       </li>
     </ul>
   </div>
@@ -291,7 +296,7 @@
       and we are scaling up capacity.
     </h2>
     <ul>
-      <li class="next">
+      <li>
         Inrupt is sponsoring 2 imec researchers<br>
         and contributing 1 developer.
       </li>
@@ -313,7 +318,7 @@
       <em>for</em> and <em>by</em> the community.
     </h2>
     <ul>
-      <li>
+      <li class="next">
         The modular design was specifically chosen<br>
         so new modules can be independently developed.
         <ul>
@@ -322,10 +327,10 @@
           <li>…</li>
         </ul>
       </li>
-      <li>
+      <li class="next">
         We aim to foster an <em>ecosystem</em> of modules.
       </li>
-      <li>
+      <li class="next">
         Contributions to the core code are most welcome.
       </li>
     </ul>
